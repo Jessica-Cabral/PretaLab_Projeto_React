@@ -48,7 +48,7 @@ const PokemonPage = () => {
   useEffect(()=>{
     const timer = setInterval(() =>{
       setProgresso((prevProgress) => (prevProgress >=100 ? 10 :prevProgress + 10));
-    },800);
+    },100);
     return () =>{
       clearInterval (timer);
     };
